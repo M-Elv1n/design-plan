@@ -1,0 +1,99 @@
+@media (max-width: 1200px) {
+  .menu {
+    &__main {
+      display: none;
+    }
+  }
+
+  .header {
+    &__burger {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .tool {
+    &__container {
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+  }
+
+  .advice {
+    &__img {
+      display: none;
+    }
+
+    &__swiper {
+      display: block;
+    }
+  }
+}
+
+@media(max-width:750px) {
+  .tool {
+    &__container {}
+
+    &__img {
+      width: 300px;
+
+      margin: auto;
+
+      &-pink {
+        right: 0;
+        top: 0;
+        left: -20px;
+      }
+
+      &-blue {
+        display: none;
+      }
+
+      &-neon {
+        // right: 0;
+        left: 0;
+        top: 50px;
+      }
+
+      &-robert {
+        // right: 0;
+        left: -50px;
+      }
+
+      &-user {
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    &__item {
+      &-test {
+        position: relative;
+        width: 100%;
+      }
+
+      &-img {
+        width: 100px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      &-button {
+        margin: auto;
+        margin-top: 70px;
+        width: 100%;
+        padding: 20px 60px;
+
+        &__link {}
+      }
+    }
+
+    &__dot {
+      margin-top: 24px;
+      margin-left: 100px;
+    }
+  }
+}
