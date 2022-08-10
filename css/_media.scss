@@ -10,6 +10,10 @@
       display: block;
     }
   }
+
+  .create__yellow-img {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -29,6 +33,136 @@
     &__swiper {
       display: block;
     }
+
+    &__main {
+      max-width: 470px;
+    }
+
+    &__sticky {
+      &-left {
+        width: 30px;
+      }
+
+      &-right {
+        width: 30px;
+      }
+    }
+  }
+
+  .template {
+    &__img {
+      display: none;
+    }
+
+    &__text {
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+
+      &-list {
+        text-align: start;
+        list-style: inside;
+      }
+
+      &-button {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .create {
+    &__img {
+      display: none;
+    }
+
+    &__text {
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+    }
+
+    &__button {
+      max-width: 100%;
+    }
+
+    &__bos {
+      &-info {
+        text-align: start;
+      }
+    }
+  }
+
+  .private {
+    &__img {
+      display: none;
+    }
+
+    &__text {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    &__violet {
+      display: none;
+    }
+  }
+
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .articles {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+      max-width: 500px;
+      margin: auto;
+    }
+  }
+
+  .trial {
+    &__container {
+      max-height: 600px;
+    }
+
+    &__img {
+      &-menu {
+        width: 150px;
+      }
+
+      &-aa {
+        width: 150px;
+      }
+
+      &-yellow {
+        bottom: 114px;
+        left: 69px;
+      }
+    }
+
+    &__title {
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 28px;
+    }
+
+    &__button {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
   }
 }
 
@@ -37,14 +171,15 @@
     &__container {}
 
     &__img {
-      width: 300px;
-
+      min-width: 100%;
+      margin-right: 0;
       margin: auto;
 
       &-pink {
         right: 0;
         top: 0;
-        left: -20px;
+        // left: -20px;
+        width: 50px;
       }
 
       &-blue {
@@ -53,18 +188,21 @@
 
       &-neon {
         // right: 0;
-        left: 0;
+        left: 50px;
         top: 50px;
+        width: 280px;
       }
 
       &-robert {
-        // right: 0;
-        left: -50px;
+        right: 0;
+        bottom: 50px;
+        width: 170px;
       }
 
       &-user {
-        left: 0;
-        bottom: 0;
+        left: 50px;
+        bottom: 90px;
+        // top: 160px;
       }
     }
 
@@ -94,6 +232,167 @@
     &__dot {
       margin-top: 24px;
       margin-left: 100px;
+    }
+  }
+
+  .function {
+    &__container {
+      &-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  .private {
+    &__text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+      &-title {
+        // font-family: 'Montserrat';
+        // font-style: normal;
+        // font-weight: 500;
+        // font-size: 16px;
+        // line-height: 28px;
+        // text-align: center;
+      }
+
+      &-regular {
+        // font-family: 'Montserrat';
+        // font-style: normal;
+        // font-weight: 400;
+        // font-size: 14px;
+        // line-height: 24px;
+        text-align: center;
+      }
+
+      &-logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  .working {
+    &__title {
+      // font-family: 'Montserrat';
+      // font-style: normal;
+      // font-weight: 500;
+      // font-size: 16px;
+      // line-height: 28px;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__gmail {
+      display: flex;
+      flex-direction: column;
+      padding-left: 100px;
+      padding-right: 100px;
+
+      &-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        // font-weight: 400;
+        // font-size: 16px;
+        // line-height: 28px;
+      }
+
+      &-regular {
+        // font-family: 'Montserrat';
+        // font-style: normal;
+        // font-weight: 400;
+        // font-size: 14px;
+        // line-height: 24px;
+      }
+    }
+
+    &__food {
+      display: flex;
+      flex-direction: column;
+      padding-left: 100px;
+      padding-right: 100px;
+
+      &-title {
+        // font-family: 'Montserrat';
+        // font-style: normal;
+        // font-weight: 400;
+        // font-size: 16px;
+        // line-height: 28px;
+      }
+
+      &-regular {
+        // font-family: 'Montserrat';
+        // font-style: normal;
+        // font-weight: 400;
+        // font-size: 14px;
+        // line-height: 24px;
+      }
+    }
+
+    &__project {
+      display: flex;
+      flex-direction: column;
+      padding-left: 100px;
+      padding-right: 100px;
+
+      &-title {
+        // font-family: 'Montserrat';
+        // font-style: normal;
+        // font-weight: 400;
+        // font-size: 16px;
+        // line-height: 28px;
+      }
+
+      &-regular {
+        // font-family: 'Montserrat';
+        // font-style: normal;
+        // font-weight: 400;
+        // font-size: 14px;
+        // line-height: 24px;
+      }
+    }
+
+  }
+
+  .advices {
+    margin: auto;
+    text-align: center;
+
+    &__title {
+      // font-family: 'Montserrat';
+      // font-style: normal;
+      // font-weight: 500;
+      // font-size: 16px;
+      // line-height: 28px;
+      text-align: center;
+    }
+
+    &__text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 10px;
+    }
+
+    &__sticky {
+      &-right {
+        right: 0;
+        width: 30px;
+      }
+
+      &-left {
+        left: 0;
+        width: 30px;
+      }
     }
   }
 }
