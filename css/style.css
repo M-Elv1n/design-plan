@@ -899,6 +899,9 @@ header {
 .working__gmail {
   text-align: start;
 }
+.working__gmail-img {
+  margin-bottom: 40px;
+}
 .working__gmail-title {
   font-family: "Montserrat";
   font-style: normal;
@@ -920,6 +923,9 @@ header {
 .working__food {
   text-align: start;
 }
+.working__food-img {
+  margin-bottom: 40px;
+}
 .working__food-title {
   font-family: "Montserrat";
   font-style: normal;
@@ -938,6 +944,9 @@ header {
 }
 .working__project {
   text-align: start;
+}
+.working__project-img {
+  margin-bottom: 40px;
 }
 .working__project-title {
   font-family: "Montserrat";
@@ -1008,6 +1017,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.advices__bos-vector {
+  cursor: pointer;
 }
 
 .rating {
@@ -1089,6 +1101,13 @@ header {
   position: absolute;
   right: 72px;
   top: 80px;
+}
+.social__network-blur {
+  display: none;
+  position: absolute;
+  right: 72px;
+  bottom: 0;
+  width: 15px;
 }
 .social__network-title {
   font-family: "Montserrat";
@@ -1340,9 +1359,91 @@ header {
   cursor: pointer;
 }
 
+.footer__container {
+  position: relative;
+}
+.footer__menu {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__menu-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.footer__menu-main a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #080829;
+  text-decoration: none;
+}
+.footer__menu-first {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__menu-second {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__menu-third {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__menu-third__mail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer__menu-third__call {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer__menu-third__global {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer__menu-third__social {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer__sticky {
+  position: absolute;
+  left: 200px;
+  bottom: 260px;
+}
+.footer__end {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__end span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
 @media (max-width: 1200px) {
   .menu__main {
     display: none;
+  }
+  .menu__container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
   }
   .header__burger {
     display: block;
@@ -1422,6 +1523,56 @@ header {
     display: flex;
     flex-direction: column;
   }
+  .social__container-first {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .social__container-second {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 0;
+  }
+  .social__network-blue {
+    display: none;
+  }
+  .social__network-blur {
+    display: block;
+  }
+  .social__smile {
+    padding: 30px;
+  }
+  .social__rainbow {
+    padding: 27px;
+  }
+  .social__w {
+    padding: 35px;
+  }
+  .social__memory {
+    padding: 30px;
+  }
+  .social__mail {
+    padding: 30px;
+  }
+  .social__gmail {
+    padding: 27px;
+  }
+  .social__gmail {
+    padding: 25px;
+  }
+  .social__bols {
+    padding: 35px;
+  }
+  .social__youtube {
+    padding: 33px;
+  }
+  .social__box {
+    padding: 30px;
+  }
+  .social__box2 {
+    display: none;
+  }
   .articles__container {
     display: flex;
     flex-direction: column;
@@ -1453,6 +1604,16 @@ header {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
+  }
+  .footer__sticky {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
   }
 }
 @media (max-width: 750px) {
@@ -1568,5 +1729,31 @@ header {
   .advices__sticky-left {
     left: 0;
     width: 30px;
+  }
+  .footer #s {
+    font-weight: bolder;
+  }
+  .footer__menu-first {
+    text-align: center;
+  }
+  .footer__menu-second {
+    text-align: center;
+  }
+  .footer__menu-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__menu-main__title {
+    text-align: center;
+  }
+  .footer__end {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .footer__end-first {
+    display: flex;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=style.css.map */

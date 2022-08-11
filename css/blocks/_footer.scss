@@ -1,0 +1,90 @@
+.footer {
+  &__container {
+    position: relative;
+  }
+
+  &__menu {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    &-main {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+
+      a {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #080829;
+        text-decoration: none;
+      }
+    }
+
+    &-first {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-second {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-third {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &__mail {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      &__call {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      &__global {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      &__social {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+    }
+  }
+
+  &__sticky {
+    position: absolute;
+    left: 200px;
+    bottom: 260px;
+  }
+
+  &__end {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+    }
+  }
+}

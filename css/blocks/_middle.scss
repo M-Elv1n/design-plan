@@ -411,6 +411,10 @@
 
     text-align: start;
 
+    &-img {
+      margin-bottom: 40px;
+    }
+
     &-title {
       font-family: 'Montserrat';
       font-style: normal;
@@ -438,6 +442,10 @@
 
     text-align: start;
 
+    &-img {
+      margin-bottom: 40px;
+    }
+
     &-title {
       font-family: 'Montserrat';
       font-style: normal;
@@ -460,6 +468,10 @@
   &__project {
 
     text-align: start;
+
+    &-img {
+      margin-bottom: 40px;
+    }
 
     &-title {
       font-family: 'Montserrat';
@@ -543,6 +555,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    &-vector {
+      cursor: pointer;
+    }
   }
 
 }
@@ -638,6 +654,14 @@
       position: absolute;
       right: 72px;
       top: 80px;
+    }
+
+    &-blur {
+      display: none;
+      position: absolute;
+      right: 72px;
+      bottom: 0;
+      width: 15px;
     }
 
     &-title {
