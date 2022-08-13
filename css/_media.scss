@@ -1,4 +1,12 @@
 @media (max-width: 1200px) {
+  .burger {
+    &__menu {
+      &--visible {
+        display: block;
+      }
+    }
+  }
+
   .menu {
     &__main {
       display: none;
@@ -9,6 +17,14 @@
       margin-right: auto;
       display: flex;
       justify-content: space-between;
+
+      // &-mobile {
+      //   position: fixed;
+      //   left: 0;
+      //   top: 0;
+      //   right: 0;
+      //   z-index: 99;
+      // }
     }
   }
 
@@ -21,6 +37,15 @@
   .create__yellow-img {
     display: none;
   }
+
+  // .header {
+  //   &__burger {
+
+  //     display: block;
+
+  //   }
+  // }
+
 
 }
 
@@ -149,89 +174,6 @@
       &-blue {
         display: none;
       }
-
-      &-blur {
-        display: block;
-      }
-
-      &-imgs {
-        // position: relative;
-        // min-height: 100%;
-      }
-    }
-
-    &__smile {
-      // position: absolute;
-      // left: 150px;
-      padding: 30px;
-    }
-
-    &__rainbow {
-      // position: absolute;
-      // right: 150px;
-      padding: 27px;
-      // top: 300px;
-    }
-
-    &__w {
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      padding: 35px;
-    }
-
-    &__memory {
-      // position: absolute;
-      // right: 0;
-      // bottom: -80px;
-      // padding-right: 49px;
-      // padding-top: 0;
-      padding: 30px;
-    }
-
-    &__mail {
-      // position: absolute;
-      // top: 0;
-      // left: 40px;
-      // bottom: 0;
-      padding: 30px;
-    }
-
-    &__gmail {
-      // position: absolute;
-      // top: 150px;
-      // bottom: 160px;
-      padding: 27px;
-    }
-
-    &__gmail {
-      padding: 25px;
-    }
-
-    &__bols {
-      // position: absolute;
-      // top: 0;
-      // right: 90px;
-      padding: 35px;
-    }
-
-    &__youtube {
-      // position: absolute;
-      // left: 60px;
-      // top: 160px;
-      padding: 33px;
-
-    }
-
-    &__box {
-      // position: absolute;
-      // right: 200px;
-      // bottom: 0;
-      padding: 30px;
-    }
-
-    &__box2 {
-      display: none;
     }
   }
 
@@ -494,6 +436,26 @@
 
   }
 
+  .social {
+    &__network {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      &--blur {
+        display: none;
+      }
+
+      &--blur2 {
+        display: block;
+      }
+
+      &-blur {
+        display: none;
+      }
+    }
+  }
+
   .advices {
     margin: auto;
     text-align: center;
@@ -563,6 +525,368 @@
         display: flex;
         justify-content: space-between;
       }
+    }
+  }
+
+  .modal {
+    &__dialog {
+      padding: 23px 38px;
+      max-width: 320px;
+
+      &-title {
+        font-weight: 260;
+        font-size: 15px;
+        line-height: 17px;
+      }
+
+      &-form {
+        &__name {
+          width: 200px;
+          height: 35px;
+        }
+
+        &__mail {
+          width: 200px;
+          height: 35px;
+        }
+
+        &__number {
+          width: 200px;
+          height: 35px;
+        }
+
+        &__button {
+          padding: 8px 25px;
+        }
+      }
+    }
+
+    &__close {
+      width: 15px;
+    }
+
+  }
+
+  .modal {
+    &__video {
+      &-dialog {
+        padding: 23px 38px;
+        max-width: 320px;
+      }
+
+      video {
+        height: 250px;
+        width: 270px;
+
+      }
+
+      &-close {
+        width: 15px;
+      }
+    }
+  }
+}
+
+@media(max-width:320px) {
+  button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 100%;
+  }
+
+  .tool {
+    &__item {
+      &-bold {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      &-regular {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .advice {
+      &__item {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 31px;
+      }
+    }
+  }
+
+  .function {
+    &__title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &__container {
+      &-img {
+        img {
+          width: 45px;
+        }
+
+        span {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .template {
+    &__text {
+      &-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      &-regular {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &-list {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .create {
+    &__title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &__regular {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    span {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .private {
+    &__text {
+      &-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      &-regular {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .working {
+    &__title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &__container {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  .advices {
+    &__title {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &__author {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 24px;
+    }
+  }
+
+  .rating {
+    &__audio {
+      &-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    &__info {
+      &-title {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 58px;
+      }
+
+      &-repost {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    &__plas {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 58px;
+    }
+  }
+
+  .social {
+    &__network {
+      &-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .articles {
+    &__title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &__branding {
+      &-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      &-date {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+
+    &__business {
+      &-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      &-date {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+
+    &__startup {
+      &-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      &-date {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .trial {
+    &__title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    #s {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 29px;
+    }
+
+    a {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
     }
   }
 }

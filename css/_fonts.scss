@@ -1,47 +1,53 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Regular.ttf') format('ttf');
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  src: url('/fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
+    url('/fonts/PlusJakartaSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Medium.ttf') format('ttf');
+  font-family: 'Montserrat', sans-serif;
+  src: url('/fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('/fonts/Montserrat-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Bold.ttf') format('ttf');
-  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  src: url('/fonts/PlusJakartaSans-Medium.woff2') format('woff2'),
+    url('/fonts/PlusJakartaSans-Medium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
-  src: url('../fonts/PlusJakartaSans-Regular.ttf') format('ttf');
+  font-family: 'Montserrat', sans-serif;
+  src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('/fonts/Montserrat-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
-  src: url('../fonts/PlusJakartaSans-Medium.ttf') format('ttf');
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  src: url('/fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('/fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
-  src: url('../fonts/PlusJakartaSans-Bold.ttf') format('ttf');
-  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  src: url('/fonts/PlusJakartaSans-Bold.woff2') format('woff2'),
+    url('/fonts/PlusJakartaSans-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }

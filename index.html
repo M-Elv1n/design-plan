@@ -12,11 +12,11 @@
 
 <body>
   <header class="header">
-    <div class="menu__container">
+    <div class="menu__container menu__container-mobile">
       <a href="index.html" class="header__logo">
         <img src="./img/svg/logo.svg" alt="Collab" class="header__logo-img">
       </a>
-      <div class="menu__item menu__main">
+      <div class="menu__item menu__main ">
         <a href="#" class="menu__item-link">Функции</a>
         <a href="#" class="menu__item-link">О нас</a>
         <a href="#" class="menu__item-link">Цены</a>
@@ -27,16 +27,36 @@
         <img src="./img/svg/basket.svg" alt="" class="basket__img">
         <a href="#">Корзина</a>
         <span>0</span>
+        <button data-toggle="modal" class="menu__button menu__main">
+          <a href="#" class="menu__button-item">Зарегистрироваться</a>
+        </button>
       </div>
-      <button class="menu__button menu__main">
-        <a href="#" class="menu__button-item">Зарегистрироваться</a>
-      </button>
+
       <div class="header__burger">
         <button class="burger">
           <img src="./img/svg/menu.svg" alt="">
           <!-- <span class="burger__line"></span>
           <span class="burger__line"></span>
           <span class="burger__line"></span> -->
+        </button>
+      </div>
+    </div>
+    <div class="burger__menu burger__menu--main">
+      <div class="burger__menu-main ">
+        <a href="#" class="burger__menu-link">Функции</a>
+        <a href="#" class="burger__menu-link">О нас</a>
+        <a href="#" class="burger__menu-link">Цены</a>
+        <a href="#" class="burger__menu-link">Блог</a>
+        <a href="#" class="burger__menu-link">Контакты</a>
+      </div>
+      <div class="b">
+        <div class="burger__menu-basket">
+          <img src="./img/svg/basket.svg" alt="" class="basket__img">
+          <a href="#">Корзина</a>
+          <span>0</span>
+        </div>
+        <button data-toggle="modal" class="burger__menu-button">
+          <a href="#" class="burger__menu-button__link">Зарегистрироваться</a>
         </button>
       </div>
     </div>
@@ -51,7 +71,7 @@
           с помощью инструмента проектирования, который поможет вам работать лучше и быстрее.
         </span>
         <div class="tool__item-test">
-          <button class="tool__item-button">
+          <button data-toggle="modal" class="tool__item-button">
             <a href="#" class="tool__item-button__link">
               Пройти пробный период
             </a>
@@ -79,59 +99,28 @@
         <img src="./img/svg__ipsum/ipsum6.svg" alt="" class="advice__img-logo">
       </div>
       <div class="advice__swiper">
-        <div class="slider hotel__slider">
+        <div class="slider">
           <!-- Slider main container -->
           <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img src="./img/svg__ipsum/ipsum1.svg" alt="" class="advice__img-logo__swiper">
+                <img src="./img/privat__ipsum1.png" alt="" class="advice__img-logo__swiper">
+                <img src="./img/privat__ipsum2.png" alt="" class="advice__img-logo__swiper">
               </div>
               <div class="swiper-slide">
-                <img src="./img/svg__ipsum/ipsum2.svg" alt="" class="advice__img-logo__swiper">
+                <img src="./img/privat__ipsum3.png" alt="" class="advice__img-logo__swiper">
+                <img src="./img/privat__ipsum4.png" alt="" class="advice__img-logo__swiper">
               </div>
               <div class="swiper-slide">
-                <img src="./img/svg__ipsum/ipsum3.svg" alt="" class="advice__img-logo__swiper">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/svg__ipsum/ipsum4.svg" alt="" class="advice__img-logo__swiper">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/svg__ipsum/ipsum5.svg" alt="" class="advice__img-logo__swiper">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/svg__ipsum/ipsum6.svg" alt="" class="advice__img-logo__swiper">
+                <img src="./img/privat__ipsum5.png" alt="" class="advice__img-logo__swiper">
+                <img src="./img/privat__ipsum6.png" alt="" class="advice__img-logo__swiper">
               </div>
             </div>
-            <!-- If we need pagination -->
             <div class="swiper-pagination">
-              <!-- <div class="swiper-slide">
-                <img src="./img/svg__ipsum/ipsum1.svg" alt="" class="advice__img-logo__swiper">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/svg__ipsum/ipsum2.svg" alt="" class="advice__img-logo__swiper">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/svg__ipsum/ipsum3.svg" alt="" class="advice__img-logo__swiper">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/svg__ipsum/ipsum4.svg" alt="" class="advice__img-logo__swiper">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/svg__ipsum/ipsum5.svg" alt="" class="advice__img-logo__swiper">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/svg__ipsum/ipsum6.svg" alt="" class="advice__img-logo__swiper">
-              </div> -->
             </div>
           </div>
-
-          <!-- If we need navigation buttons -->
-          <!-- <button class="swiper-button-prev"></button> -->
-          <!-- <button class="swiper-button-next"></button> -->
-
-          <div class="swiper-scrollbar"></div>
         </div>
 
         <!-- Slider main container -->
@@ -327,8 +316,6 @@
               </span></div>
           </div>
         </div>
-
-
       </div>
     </section>
     <section class="advices advices__main">
@@ -337,48 +324,65 @@
       <h1 class="advices__title">
         Послушайте, что говорят команды о Collab по всему миру
       </h1>
-      <div class="advices__star">
-        <img src="./img/advice/star__true.svg" alt="" class="">
-        <img src="./img/advice/star__true.svg" alt="" class="">
-        <img src="./img/advice/star__true.svg" alt="" class="">
-        <img src="./img/advice/star__true.svg" alt="" class="">
-        <img src="./img/advice/star__false.svg" alt="" class="">
-      </div>
-      <div class="advices__text">
-        Я хочу, чтобы моя команда тратила время на размышления о проблемах UX высокого уровня, а не бездумно повторяла
-        рутинную
-        работу. Collab помогает им в этом.
-      </div>
-      <div class="advices__author">
-        <span>Роберт Майар -</span>
-        <span>Основатель Airbnb</span>
-      </div>
-      <div class="advices__bos">
-        <div><img src="./img/advice/advice__bos.png" alt="" class="advices__bos-img"></div>
-        <div class="advices__bos-vector">
-          <img src="./img/advice/vector__left.png" alt="" class="advices__bos-vector">
-          <img src="./img/advice/vector__right.png" alt="" class="advices__bos-vector">
+      <div class="swiper-container__advice">
+        <div class="slider">
+          <div class="advice__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="advices__star">
+                  <img src="./img/advice/star__true.svg" alt="" class="">
+                  <img src="./img/advice/star__true.svg" alt="" class="">
+                  <img src="./img/advice/star__true.svg" alt="" class="">
+                  <img src="./img/advice/star__true.svg" alt="" class="">
+                  <img src="./img/advice/star__false.svg" alt="" class="">
+                </div>
+                <div class="advices__text">
+                  Я хочу, чтобы моя команда тратила время на размышления о проблемах UX высокого уровня, а не бездумно
+                  повторяла
+                  рутинную
+                  работу. Collab помогает им в этом.
+                  <div class="advices__author">
+                    <span>Роберт Майар -</span>
+                    <span>Основатель Airbnb</span>
+                  </div>
+                  <div class="advices__bos">
+                    <img src="./img/advice/advice__bos.png" alt="" class="advices__bos-img">
+                    <div class="advices__cursor">
+                      <img src="./img/advice/vector__left.png" alt="" class="advices__bos-left">
+                      <img src="./img/advice/vector__right.png" alt="" class="advices__bos-right">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+
     </section>
     <section class="container rating">
       <div class="rating__audio">
-        <div class="rating__audio-container">
-          <img src="./img/svg/audi2.svg" alt="" class="rating__audio-img">
+        <div class="rating__audio--container">
+          <div class="rating__audio-container">
+            <img data-toggle="modal__video" src="./img/svg/audi2.svg" alt="" class="rating__audio-img">
+            <!-- <img src="./img/svg/bools.svg" alt="" class="rating__audio-img"> -->
+          </div>
         </div>
         <span class="rating__audio-text">Смотреть&nbsp;демо</span>
       </div>
       <div class="rating__info">
         <div class="rating__info-five">
-          <h1 class="rating__info-title">500k <span class="reting__plas">+</span></h1>
+          <h1 class="rating__info-title">500k <span class="rating__plas">+</span></h1>
           <span class="rating__info-repost">Collab собрал более 500 тысяч пользователей.</span>
         </div>
         <div class="rating__info-ten">
-          <h1 class="rating__info-title">100k <span class="reting__plas">+</span></h1>
+          <h1 class="rating__info-title">100k <span class="rating__plas">+</span></h1>
           <span class="rating__info-repost">Более 100 000 команд используют Collab.</span>
         </div>
         <div class="rating__info-two">
-          <h1 class="rating__info-title">20k <span class="reting__plas">+</span></h1>
+          <h1 class="rating__info-title">20k <span class="rating__plas">+</span></h1>
           <span class="rating__info-repost">У Collab более 20 000+ 5 стартовых отзывов.</span>
         </div>
       </div>
@@ -390,23 +394,9 @@
       </h1>
       <img src="./img/social__network/blue.svg" alt="" class="social__network-blue">
       <div class="social__network-imgs">
-        <div class="social__container-first">
-          <img src="./img/social__network/smile.svg" alt="" class="social__smile">
-          <img src="./img/social__network/rainbow.png" alt="" class="social__rainbow">
-          <img src="./img/social__network/w.svg" alt="" class="social__w">
-          <img src="./img/social__network/memory.png" alt="" class="social__memory">
-          <img src="./img/social__network/mail.png" alt="" class="social__mail">
-        </div>
-        <div class="social__container-second">
-          <img src="./img/social__network/gmail.png" alt="" class="social__gmail2">
-          <img src="./img/social__network/box.png" alt="" class="social__box">
-          <img src="./img/social__network/bols.png" alt="" class="social__bols">
-          <img src="./img/social__network/gmail.png" alt="" class="social__gmail2">
-          <img src="./img/social__network/youtube.png" alt="" class="social__youtube">
-          <img src="./img/social__network/box.png" alt="" class="social__box2">
-        </div>
+        <img src="./img/socials.png" alt="" class="social__network--blur">
       </div>
-      <img src="./img/social__network/blue.svg" alt="" class="social__network-blur">
+      <img src="./img/img.png" alt="" class="social__network--blur2">
     </section>
     <section class="container articles">
       <h1 class="articles__title">
@@ -473,12 +463,11 @@
           Мы любим испытания.
         </h1>
         <div class="trial__button">
-          <button class="trial__button-main">Пройти пробный период</button>
+          <button data-toggle="modal" class="trial__button-main">Пройти пробный период</button>
           <img src="./img/trial/credit.png" alt="" class="trial__button-img">
         </div>
       </div>
     </section>
-
   </div>
   <footer class="footer">
     <div class="container footer__container">
@@ -511,23 +500,23 @@
           </div>
           <div class="footer__menu-third">
             <a href="#" class="footer__menu-main__title" id="s">СВЯЗАТЬСЯ</a>
-            <a href="#" class="footer__menu-third__mail">
+            <a href="mailto:Support@collab.com" class="footer__menu-third__mail">
               <img src="./img/footer/mail2.svg" alt="">
               <span>Support@collab.com</span>
             </a>
-            <a href="#" class="footer__menu-third__call">
+            <a href="https://wa.me/+12025550144" class="footer__menu-third__call">
               <img src="./img/footer/call.svg" alt="">
               <span>+1-202-555-0144</span>
             </a>
-            <a href="#" class="footer__menu-third__global">
+            <a href="https://www.global.com" class="footer__menu-third__global">
               <img src="./img/footer/global2.svg" alt="">
               <span>Collab.webflow.io</span>
             </a>
             <div href="#" class="footer__menu-third__social">
-              <a href=""><img src="./img/footer/fb.svg" alt=""></a>
-              <a href=""><img src="./img/footer/twit.svg" alt=""></a>
-              <a href=""><img src="./img/footer/inst2.svg" alt=""></a>
-              <a href=""><img src="./img/footer/global2.svg" alt=""></a>
+              <a href="https://www.facebook.com"><img src="./img/footer/fb.svg" alt=""></a>
+              <a href="https://www.twitter.com"><img src="./img/footer/twit.svg" alt=""></a>
+              <a href="https://www.instagram.com"><img src="./img/footer/inst2.svg" alt=""></a>
+              <a href="https://www.global.com"><img src="./img/footer/global2.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -544,6 +533,34 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="./img/svg/close.svg" alt="">
+      </a>
+      <h3 class="modal__dialog-title">
+        Оставьте свои контакты и мы обязательно с вами свяжемся
+      </h3>
+      <form action="#" class="modal__dialog-form">
+        <input type="text" placeholder="Name" name="name" class="modal__dialog-form__name">
+        <input type="text" placeholder="Mail" name="mail" class="modal__dialog-form__mail">
+        <input type="text" placeholder="Phone" name="number" class="modal__dialog-form__number">
+        <button type="submit" class="modal__dialog-form__button">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal__video">
+    <div class="modal__video-overlay"></div>
+    <div class="modal__video-dialog">
+      <a href="#" class="modal__video-close">
+        <img src="./img/svg/close.svg" alt="">
+      </a>
+      <video width="400" height="300" controls src="./video/collabio.mp4" type="audio/mpeg"></video>
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>

@@ -161,7 +161,7 @@
     flex-direction: column;
 
     &-title {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 36px;
@@ -171,7 +171,7 @@
 
     &-regular {
       margin-top: 15px;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 18px;
@@ -181,7 +181,7 @@
 
     &-list {
       margin-top: 15px;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -200,7 +200,7 @@
 
       &__link {
         text-decoration: none;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -222,7 +222,7 @@
   }
 
   &__title {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -232,7 +232,7 @@
 
   &__regular {
     margin-top: 20px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -252,7 +252,7 @@
     &-name {
       display: flex;
       align-items: center;
-      font-family: 'Plus Jakarta Sans';
+      font-family: 'Plus Jakarta Sans', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
@@ -261,7 +261,7 @@
     }
 
     &-text {
-      font-family: 'Plus Jakarta Sans';
+      font-family: 'Plus Jakarta Sans', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -277,9 +277,10 @@
     border: none;
     max-width: 200px;
     padding: 20px;
+    cursor: pointer;
 
     &-link {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
@@ -345,7 +346,7 @@
     margin-top: 40px;
 
     &-title {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 36px;
@@ -355,7 +356,7 @@
 
     &-regular {
       padding-top: 20px;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
@@ -391,7 +392,7 @@
   align-items: center;
 
   &__title {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -416,7 +417,7 @@
     }
 
     &-title {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 27px;
@@ -426,7 +427,7 @@
     }
 
     &-regular {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
@@ -447,7 +448,7 @@
     }
 
     &-title {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 26px;
@@ -456,7 +457,7 @@
     }
 
     &-regular {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
@@ -474,7 +475,7 @@
     }
 
     &-title {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 26px;
@@ -484,7 +485,7 @@
     }
 
     &-regular {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
@@ -509,8 +510,8 @@
 
     &-right {
       position: absolute;
-      bottom: 80px;
-      right: -90px;
+      bottom: 160px;
+      right: -100px;
       opacity: 0.5;
     }
   }
@@ -523,7 +524,7 @@
 
   &__title {
     text-align: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -533,10 +534,10 @@
   }
 
   &__text {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 42px;
     text-align: start;
     height: 170px;
@@ -551,12 +552,19 @@
     margin-bottom: 40px;
   }
 
+  &__cursor {}
+
   &__bos {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    &-vector {
+
+    &-left {
+      cursor: pointer;
+    }
+
+    &-right {
       cursor: pointer;
     }
   }
@@ -569,6 +577,10 @@
   align-items: center;
   justify-content: space-between;
 
+  &__plas {
+    color: #3F53D8;
+  }
+
   &__audio {
     display: flex;
     align-items: center;
@@ -576,7 +588,7 @@
     margin-right: 120px;
 
     &-text {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
@@ -584,6 +596,16 @@
       color: #080829;
       cursor: pointer;
       padding-left: 10px;
+    }
+
+    &--container {
+      border: 1px solid #3F53D8;
+      padding: 9px;
+
+      &:hover {
+        transition: 0.3s;
+        opacity: 1;
+      }
     }
 
     &-container {
@@ -603,10 +625,10 @@
 
   &__info {
     display: flex;
-    flex-grow: 40px;
+
 
     &-title {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 44px;
@@ -615,7 +637,7 @@
     }
 
     &-repost {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
@@ -631,24 +653,15 @@
     hr {
       background: rgba(8, 8, 41, 0.3);
     }
-
-    &-first {
-      max-width: 860px;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      margin: auto;
-    }
-
-    &-second {
-      margin-top: 130px;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-    }
   }
 
   &__network {
     margin-top: 200px;
     position: relative;
+
+    &--blur2 {
+      display: none;
+    }
 
     &-blue {
       position: absolute;
@@ -656,16 +669,8 @@
       top: 80px;
     }
 
-    &-blur {
-      display: none;
-      position: absolute;
-      right: 72px;
-      bottom: 0;
-      width: 15px;
-    }
-
     &-title {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 36px;
@@ -677,46 +682,10 @@
       margin-bottom: 57px;
     }
   }
-
-  &__smile {
-    padding: 45px;
-  }
-
-  &__rainbow {
-    padding: 35px;
-  }
-
-  &__w {
-    padding: 50px 30px;
-  }
-
-  &__memory {
-    padding: 40px;
-  }
-
-  &__mail {
-    padding: 60px;
-  }
-
-  &__gmail {
-    padding: 40px;
-  }
-
-  &__box {
-    padding: 40px;
-  }
-
-  &__bols {
-    padding: 60px;
-  }
-
-  &__youtube {
-    padding: 45px;
-  }
 }
 
 .articles {
-  margin-top: 220px;
+  margin-top: 100px;
   text-align: center;
   margin-bottom: 150px;
 
@@ -734,7 +703,7 @@
       margin-top: 30px;
       margin-bottom: 27px;
       max-width: 110px;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -749,7 +718,7 @@
     }
 
     &-text {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 22px;
@@ -759,7 +728,7 @@
     }
 
     &-date {
-      font-family: 'Plus Jakarta Sans';
+      font-family: 'Plus Jakarta Sans', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -780,7 +749,7 @@
       margin-top: 30px;
       margin-bottom: 27px;
       max-width: 110px;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -795,7 +764,7 @@
     }
 
     &-text {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 22px;
@@ -805,7 +774,7 @@
     }
 
     &-date {
-      font-family: 'Plus Jakarta Sans';
+      font-family: 'Plus Jakarta Sans', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -826,7 +795,7 @@
       margin-top: 30px;
       margin-bottom: 27px;
       max-width: 110px;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -841,7 +810,7 @@
     }
 
     &-text {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 22px;
@@ -851,7 +820,7 @@
     }
 
     &-date {
-      font-family: 'Plus Jakarta Sans';
+      font-family: 'Plus Jakarta Sans', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -865,7 +834,7 @@
   }
 
   &__title {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -921,7 +890,7 @@
     max-width: 800px;
     padding-top: 200px;
     text-align: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -937,7 +906,7 @@
       padding: 10px 35px;
       background: #3F53D8;
       border-radius: 14px;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
