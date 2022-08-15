@@ -23,6 +23,26 @@ $(document).ready(function () {
     document.querySelector(".burger__menu").classList.toggle("burger__menu--visible");
   });
 
+  var menuBurger = document.querySelector(".burger__close");
+  menuBurger.addEventListener("click", function () {
+    console.log("click button__close");
+    document.querySelector(".burger__menu").classList.toggle("burger__menu--visible");
+  });
+
+  var menuCloseVideo = document.querySelector(".modal__video-close");
+  menuCloseVideo.addEventListener("click", function () {
+    console.log("click modal__video-close");
+    document.querySelector(".modal__video-dialog").classList.toggle("modal__video-dialog--visible");
+    document.querySelector(".modal__video-overlay").classList.toggle("modal__video-overlay--visible");
+    $('.modal__video-block').fadeOut(function () {
+      $('.modal__video-close').remove();
+      document.location.reload();
+    });
+    return false;
+  });
+
+
+
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
@@ -45,7 +65,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   var modalVideo = $("[data-toggle=modal__video]");
-  var closeModalVideo = $(".modal__video-close");
+  // var closeModalVideo = $(".modal__video-close");
   modalVideo.on("click", openModalVideo);
   closeModalVideo.on("click", closeModalVideo);
 
@@ -55,11 +75,11 @@ $(document).ready(function () {
     modalVideoOverlay.addClass("modal__video-overlay--visible");
     modalVideoDialog.addClass("modal__video-dialog--visible");
   }
-  function closeModalVideo() {
-    var modalVideoOverlay = $(".modal__video-overlay");
-    var modalVideoDialog = $(".modal__video-dialog");
-    modalVideoOverlay.removeClass("modal__video-overlay--visible");
-    modalVideoDialog.removeClass("modal__video-dialog--visible");
-  }
+  // function closeModalVideo() {
+  //   var modalVideoOverlay = $(".modal__video-overlay");
+  //   var modalVideoDialog = $(".modal__video-dialog");
+  //   modalVideoOverlay.removeClass("modal__video-overlay--visible");
+  //   modalVideoDialog.removeClass("modal__video-dialog--visible");
+  // }
   // AOS.init();
 });

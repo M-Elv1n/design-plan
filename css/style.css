@@ -327,47 +327,47 @@ header {
 
 .advice__slider {
   overflow: hidden;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 @font-face {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  src: url("/fonts/PlusJakartaSans-Regular.woff2") format("woff2"), url("/fonts/PlusJakartaSans-Regular.woff") format("woff");
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2"), url("../fonts/PlusJakartaSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url("/fonts/Montserrat-Medium.woff2") format("woff2"), url("/fonts/Montserrat-Medium.woff") format("woff");
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  src: url("/fonts/PlusJakartaSans-Medium.woff2") format("woff2"), url("/fonts/PlusJakartaSans-Medium.woff") format("woff");
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Medium.woff2") format("woff2"), url("../fonts/PlusJakartaSans-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url("/fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url("/fonts/Montserrat-Bold.woff2") format("woff2"), url("/fonts/Montserrat-Bold.woff") format("woff");
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  src: url("/fonts/PlusJakartaSans-Bold.woff2") format("woff2"), url("/fonts/PlusJakartaSans-Bold.woff") format("woff");
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Bold.woff2") format("woff2"), url("../fonts/PlusJakartaSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -400,12 +400,26 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 50px;
+  margin-top: 90px;
 }
 
+.burger__close {
+  position: fixed;
+  top: 24px;
+  right: 20px;
+  width: 15px;
+}
+.burger__close--visible {
+  display: block;
+}
+.burger__zero {
+  color: #3F53D8;
+}
 .burger__menu {
   display: none;
-  background: rgba(245, 241, 241, 0.6);
+  background-color: #ffffff;
+  background: rgb(245, 241, 241);
   -webkit-backdrop-filter: grayscale(1) contrast(3) blur(10px);
           backdrop-filter: grayscale(1) contrast(3) blur(10px);
   -webkit-backdrop-filter: inherit;
@@ -414,9 +428,21 @@ header {
           backdrop-filter: initial;
   -webkit-backdrop-filter: unset;
           backdrop-filter: unset;
+  margin: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
   height: 100vh;
+  width: 100%;
   padding-bottom: 20px;
   gap: 45px;
+  padding-top: 90px;
+}
+.burger__menu-zero {
+  color: #3F53D8;
 }
 .burger__menu-link {
   display: flex;
@@ -424,7 +450,7 @@ header {
   align-items: center;
   text-decoration: none;
   color: #222222;
-  padding-bottom: 45px;
+  padding-bottom: 25px;
 }
 .burger__menu-basket {
   display: flex;
@@ -479,6 +505,10 @@ header {
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
+  letter-spacing: 0.18px;
+}
+.menu__zero {
+  color: #3F53D8;
 }
 .menu__basket a {
   font-style: normal;
@@ -511,6 +541,7 @@ header {
   text-align: center;
   text-decoration: none;
   color: #080829;
+  letter-spacing: 0.4px;
 }
 .menu__button-item:hover {
   color: #ffffff;
@@ -535,6 +566,7 @@ header {
   color: #080829;
   margin-bottom: 36px;
   padding-bottom: 0;
+  letter-spacing: 2.16px;
 }
 .tool__item-regular {
   font-style: normal;
@@ -542,6 +574,7 @@ header {
   font-size: 18px;
   line-height: 29px;
   color: #080829;
+  letter-spacing: 0.36px;
 }
 .tool__item-test {
   display: flex;
@@ -561,6 +594,7 @@ header {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  letter-spacing: 0.4px;
 }
 .tool__img {
   min-width: 600px;
@@ -614,6 +648,7 @@ header {
   line-height: 31px;
   text-align: center;
   color: #080829;
+  letter-spacing: 0.48px;
 }
 .advice__img {
   margin: 0;
@@ -636,6 +671,7 @@ header {
   line-height: 56px;
   text-align: center;
   color: #080829;
+  letter-spacing: 1.44px;
 }
 .function__text {
   margin-top: 30px;
@@ -646,6 +682,7 @@ header {
   text-align: start;
   max-width: 550px;
   color: #545479;
+  letter-spacing: 0.36px;
 }
 .function__container-img {
   margin-top: 90px;
@@ -668,6 +705,7 @@ header {
 }
 .function__container-img span {
   cursor: pointer;
+  letter-spacing: 0.02px;
 }
 .function__img-reviewer {
   margin: auto;
@@ -770,6 +808,7 @@ header {
   font-size: 36px;
   line-height: 56px;
   color: #080829;
+  letter-spacing: 1.44px;
 }
 .template__text-regular {
   margin-top: 15px;
@@ -779,6 +818,7 @@ header {
   font-size: 18px;
   line-height: 29px;
   color: #7C7C97;
+  letter-spacing: 0.36px;
 }
 .template__text-list {
   margin-top: 15px;
@@ -789,6 +829,7 @@ header {
   line-height: 29px;
   color: #080829;
   list-style: none;
+  letter-spacing: 0.36px;
 }
 .template__text-button {
   margin-top: 30px;
@@ -806,6 +847,7 @@ header {
   font-size: 18px;
   line-height: 20px;
   color: #FFFFFF;
+  letter-spacing: 0.4px;
 }
 
 .create {
@@ -824,6 +866,7 @@ header {
   font-size: 36px;
   line-height: 56px;
   color: #080829;
+  letter-spacing: 1.44px;
 }
 .create__regular {
   margin-top: 20px;
@@ -833,6 +876,7 @@ header {
   font-size: 18px;
   line-height: 29px;
   color: #545479;
+  letter-spacing: 0.36px;
 }
 .create__bos {
   margin-top: 15px;
@@ -852,6 +896,7 @@ header {
   font-size: 15px;
   line-height: 22px;
   color: #080829;
+  letter-spacing: 0.32px;
 }
 .create__bos-text {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -860,6 +905,7 @@ header {
   font-size: 16px;
   line-height: 25px;
   color: #080829;
+  letter-spacing: 0.36px;
 }
 .create__button {
   margin-top: 50px;
@@ -877,6 +923,7 @@ header {
   font-size: 18px;
   line-height: 20px;
   color: #FFFFFF;
+  letter-spacing: 0.4px;
 }
 .create__img {
   position: relative;
@@ -930,15 +977,17 @@ header {
   font-size: 36px;
   line-height: 55px;
   color: #080829;
+  letter-spacing: 1.44px;
 }
 .private__text-regular {
-  padding-top: 20px;
+  margin-top: 0;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 29px;
   color: #545479;
+  letter-spacing: 0.36px;
 }
 .private__text hr {
   background: rgba(8, 8, 41, 0.3);
@@ -972,6 +1021,7 @@ header {
   color: #080829;
   text-align: center;
   margin-bottom: 52px;
+  letter-spacing: 1.44px;
 }
 .working__container {
   display: grid;
@@ -992,6 +1042,7 @@ header {
   line-height: 34px;
   color: #080829;
   text-align: start;
+  letter-spacing: 0.56px;
 }
 .working__gmail-regular {
   font-family: "Montserrat", sans-serif;
@@ -1001,6 +1052,7 @@ header {
   line-height: 25px;
   color: #545479;
   text-align: start;
+  letter-spacing: 0.36px;
 }
 .working__food {
   text-align: start;
@@ -1015,6 +1067,7 @@ header {
   font-size: 26px;
   line-height: 34px;
   color: #080829;
+  letter-spacing: 0.56px;
 }
 .working__food-regular {
   font-family: "Montserrat", sans-serif;
@@ -1023,6 +1076,7 @@ header {
   font-size: 17px;
   line-height: 25px;
   color: #545479;
+  letter-spacing: 0.36px;
 }
 .working__project {
   text-align: start;
@@ -1038,6 +1092,7 @@ header {
   line-height: 34px;
   color: #080829;
   padding-bottom: 10px;
+  letter-spacing: 0.56px;
 }
 .working__project-regular {
   font-family: "Montserrat", sans-serif;
@@ -1047,6 +1102,7 @@ header {
   line-height: 25px;
   color: #545479;
   margin-top: 10px;
+  letter-spacing: 0.36px;
 }
 
 .advices {
@@ -1078,6 +1134,7 @@ header {
   line-height: 56px;
   color: #000000;
   margin-bottom: 80px;
+  letter-spacing: 1.44px;
 }
 .advices__text {
   font-family: "Montserrat", sans-serif;
@@ -1087,6 +1144,7 @@ header {
   line-height: 42px;
   text-align: start;
   height: 170px;
+  letter-spacing: 0.64px;
 }
 .advices__star {
   margin-bottom: 35px;
@@ -1094,6 +1152,7 @@ header {
 .advices__author {
   display: flex;
   margin-bottom: 40px;
+  letter-spacing: 0.48px;
 }
 .advices__bos {
   display: flex;
@@ -1115,6 +1174,7 @@ header {
 }
 .rating__plas {
   color: #3F53D8;
+  letter-spacing: 1.44px;
 }
 .rating__audio {
   display: flex;
@@ -1163,6 +1223,7 @@ header {
   font-size: 44px;
   line-height: 58px;
   color: #080829;
+  letter-spacing: 1.44px;
 }
 .rating__info-repost {
   font-family: "Montserrat", sans-serif;
@@ -1200,6 +1261,7 @@ header {
   max-width: 800px;
   margin: auto;
   margin-bottom: 57px;
+  letter-spacing: 1.44px;
 }
 
 .articles {
@@ -1232,6 +1294,7 @@ header {
   border: none;
   text-align: center;
   cursor: pointer;
+  letter-spacing: 0.36px;
 }
 .articles__branding-text {
   font-family: "Montserrat", sans-serif;
@@ -1241,6 +1304,7 @@ header {
   line-height: 35px;
   text-align: start;
   color: #080829;
+  letter-spacing: 0.52px;
 }
 .articles__branding-date {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -1253,6 +1317,7 @@ header {
   display: flex;
   align-items: center;
   gap: 4px;
+  letter-spacing: 0.36px;
 }
 .articles__business {
   display: flex;
@@ -1274,6 +1339,7 @@ header {
   border: none;
   text-align: center;
   cursor: pointer;
+  letter-spacing: 0.36px;
 }
 .articles__business-text {
   font-family: "Montserrat", sans-serif;
@@ -1283,6 +1349,7 @@ header {
   line-height: 35px;
   text-align: start;
   color: #080829;
+  letter-spacing: 0.52px;
 }
 .articles__business-date {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -1295,6 +1362,7 @@ header {
   display: flex;
   align-items: center;
   gap: 4px;
+  letter-spacing: 0.36px;
 }
 .articles__startup {
   display: flex;
@@ -1316,6 +1384,7 @@ header {
   border: none;
   text-align: center;
   cursor: pointer;
+  letter-spacing: 0.36px;
 }
 .articles__startup-text {
   font-family: "Montserrat", sans-serif;
@@ -1325,6 +1394,7 @@ header {
   line-height: 35px;
   text-align: start;
   color: #080829;
+  letter-spacing: 0.52px;
 }
 .articles__startup-date {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -1337,6 +1407,7 @@ header {
   display: flex;
   align-items: center;
   gap: 4px;
+  letter-spacing: 0.36px;
 }
 .articles__title {
   font-family: "Montserrat", sans-serif;
@@ -1346,6 +1417,7 @@ header {
   line-height: 56px;
   color: #080829;
   margin-bottom: 70px;
+  letter-spacing: 1.44px;
 }
 
 .trial {
@@ -1392,6 +1464,7 @@ header {
   font-size: 48px;
   line-height: 70px;
   color: #FFFFFF;
+  letter-spacing: 2.16px;
 }
 .trial__button {
   display: flex;
@@ -1410,6 +1483,7 @@ header {
   text-align: center;
   margin-right: 30px;
   cursor: pointer;
+  letter-spacing: 0.4px;
 }
 
 .footer__container {
@@ -1433,6 +1507,7 @@ header {
   line-height: 30px;
   color: #080829;
   text-decoration: none;
+  letter-spacing: 0.2px;
 }
 .footer__menu-first {
   display: flex;
@@ -1486,6 +1561,7 @@ header {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  letter-spacing: 0.2px;
 }
 
 .modal__overlay {
@@ -1634,6 +1710,11 @@ header {
   .burger__menu--visible {
     display: block;
   }
+  .tool__container {
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+  }
   .menu__main {
     display: none;
   }
@@ -1642,6 +1723,7 @@ header {
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
   }
   .header__burger {
     display: block;
@@ -1651,11 +1733,6 @@ header {
   }
 }
 @media (max-width: 1024px) {
-  .tool__container {
-    flex-direction: column;
-    max-width: 500px;
-    margin: auto;
-  }
   .advice__img {
     display: none;
   }
@@ -1770,118 +1847,16 @@ header {
   .footer__sticky {
     display: none;
   }
-}
-@media (max-width: 900px) {
   .footer__menu {
     display: flex;
     flex-direction: column;
     gap: 60px;
   }
 }
-@media (max-width: 750px) {
-  .tool__img {
-    min-width: 100%;
-    margin-right: 0;
-    margin: auto;
-  }
-  .tool__img-pink {
-    right: 0;
-    top: 0;
-    width: 50px;
-  }
-  .tool__img-blue {
-    display: none;
-  }
-  .tool__img-neon {
-    left: 50px;
-    top: 50px;
-    width: 280px;
-  }
-  .tool__img-robert {
-    right: 0;
-    bottom: 50px;
-    width: 170px;
-  }
-  .tool__img-user {
-    left: 50px;
-    bottom: 90px;
-  }
-  .tool__item-test {
-    position: relative;
-    width: 100%;
-  }
-  .tool__item-img {
-    width: 100px;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .tool__item-button {
-    margin: auto;
-    margin-top: 70px;
-    width: 100%;
-    padding: 20px 60px;
-  }
-  .tool__dot {
-    margin-top: 24px;
-    margin-left: 100px;
-  }
+@media (max-width: 900px) {
   .function__container-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-  .private__text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-  .private__text-regular {
-    text-align: center;
-  }
-  .private__text-logo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .working__container {
-    display: flex;
-    flex-direction: column;
-  }
-  .working__gmail {
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  .working__gmail-title {
-    font-family: "Montserrat";
-    font-style: normal;
-  }
-  .working__food {
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  .working__project {
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  .social__network {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .social__network--blur {
-    display: none;
-  }
-  .social__network--blur2 {
-    display: block;
-  }
-  .social__network-blur {
-    display: none;
   }
   .advices {
     margin: auto;
@@ -1932,6 +1907,104 @@ header {
     display: flex;
     justify-content: space-between;
   }
+}
+@media (max-width: 750px) {
+  .tool__img {
+    min-width: 100%;
+    margin-right: 0;
+    margin: auto;
+  }
+  .tool__img-pink {
+    right: 0;
+    top: 0;
+    width: 50px;
+  }
+  .tool__img-blue {
+    display: none;
+  }
+  .tool__img-neon {
+    left: 50px;
+    top: 50px;
+    width: 280px;
+  }
+  .tool__img-robert {
+    right: 0;
+    bottom: 50px;
+    width: 170px;
+  }
+  .tool__img-user {
+    left: 50px;
+    bottom: 90px;
+  }
+  .tool__item-test {
+    position: relative;
+    width: 100%;
+  }
+  .tool__item-img {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .tool__item-button {
+    margin: auto;
+    margin-top: 70px;
+    width: 100%;
+    padding: 20px 60px;
+  }
+  .tool__dot {
+    margin-top: 24px;
+    margin-left: 100px;
+  }
+  .private__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .private__text-regular {
+    text-align: center;
+  }
+  .private__text-logo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .working__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .working__gmail {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .working__food {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .working__project {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .social__network {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .social__network--blur {
+    display: none;
+  }
+  .social__network--blur2 {
+    display: block;
+  }
+  .social__network-blur {
+    display: none;
+  }
   .modal__dialog {
     padding: 23px 38px;
     max-width: 320px;
@@ -1960,15 +2033,23 @@ header {
     width: 15px;
   }
   .modal__video-dialog {
-    padding: 23px 38px;
+    padding: 30px 40px;
     max-width: 320px;
   }
   .modal__video video {
     height: 250px;
     width: 270px;
   }
-  .modal__video-close {
+  .modal__video img {
+    position: fixed;
+    z-index: 10;
+    right: 20px;
     width: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .tool__item-bold {
+    font-size: 30px;
   }
 }
 @media (max-width: 320px) {

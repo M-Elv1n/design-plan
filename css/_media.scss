@@ -7,6 +7,14 @@
     }
   }
 
+  .tool {
+    &__container {
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+  }
+
   .menu {
     &__main {
       display: none;
@@ -17,14 +25,7 @@
       margin-right: auto;
       display: flex;
       justify-content: space-between;
-
-      // &-mobile {
-      //   position: fixed;
-      //   left: 0;
-      //   top: 0;
-      //   right: 0;
-      //   z-index: 99;
-      // }
+      padding: 0 20px;
     }
   }
 
@@ -38,25 +39,10 @@
     display: none;
   }
 
-  // .header {
-  //   &__burger {
-
-  //     display: block;
-
-  //   }
-  // }
-
-
 }
 
 @media (max-width: 1024px) {
-  .tool {
-    &__container {
-      flex-direction: column;
-      max-width: 500px;
-      margin: auto;
-    }
-  }
+
 
   .advice {
     &__img {
@@ -226,17 +212,91 @@
     &__sticky {
       display: none;
     }
-  }
-}
 
-@media(max-width:900px) {
-  .footer {
     &__menu {
       display: flex;
       flex-direction: column;
       gap: 60px;
       // max-width: 300px;
       // margin: auto;
+    }
+  }
+}
+
+@media(max-width:900px) {
+  .function {
+    &__container {
+      &-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  .advices {
+    margin: auto;
+    text-align: center;
+
+    &__title {
+      text-align: center;
+    }
+
+    &__text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 10px;
+    }
+
+    &__sticky {
+      &-right {
+        right: 0;
+        width: 30px;
+      }
+
+      &-left {
+        left: 0;
+        width: 30px;
+      }
+    }
+  }
+
+  .footer {
+    #s {
+      font-weight: bolder;
+    }
+
+    &__menu {
+      &-first {
+        text-align: center;
+      }
+
+      &-second {
+        text-align: center;
+      }
+
+      &-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+          text-align: center;
+        }
+      }
+    }
+
+    &__end {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+
+      &-first {
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 }
@@ -310,15 +370,6 @@
     }
   }
 
-  .function {
-    &__container {
-      &-img {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-  }
-
   .private {
     &__text {
       display: flex;
@@ -326,21 +377,7 @@
       text-align: center;
       align-items: center;
 
-      &-title {
-        // font-family: 'Montserrat';
-        // font-style: normal;
-        // font-weight: 500;
-        // font-size: 16px;
-        // line-height: 28px;
-        // text-align: center;
-      }
-
       &-regular {
-        // font-family: 'Montserrat';
-        // font-style: normal;
-        // font-weight: 400;
-        // font-size: 14px;
-        // line-height: 24px;
         text-align: center;
       }
 
@@ -352,14 +389,6 @@
   }
 
   .working {
-    &__title {
-      // font-family: 'Montserrat';
-      // font-style: normal;
-      // font-weight: 500;
-      // font-size: 16px;
-      // line-height: 28px;
-    }
-
     &__container {
       display: flex;
       flex-direction: column;
@@ -371,21 +400,6 @@
       padding-left: 100px;
       padding-right: 100px;
 
-      &-title {
-        font-family: 'Montserrat';
-        font-style: normal;
-        // font-weight: 400;
-        // font-size: 16px;
-        // line-height: 28px;
-      }
-
-      &-regular {
-        // font-family: 'Montserrat';
-        // font-style: normal;
-        // font-weight: 400;
-        // font-size: 14px;
-        // line-height: 24px;
-      }
     }
 
     &__food {
@@ -393,22 +407,6 @@
       flex-direction: column;
       padding-left: 100px;
       padding-right: 100px;
-
-      &-title {
-        // font-family: 'Montserrat';
-        // font-style: normal;
-        // font-weight: 400;
-        // font-size: 16px;
-        // line-height: 28px;
-      }
-
-      &-regular {
-        // font-family: 'Montserrat';
-        // font-style: normal;
-        // font-weight: 400;
-        // font-size: 14px;
-        // line-height: 24px;
-      }
     }
 
     &__project {
@@ -416,22 +414,6 @@
       flex-direction: column;
       padding-left: 100px;
       padding-right: 100px;
-
-      &-title {
-        // font-family: 'Montserrat';
-        // font-style: normal;
-        // font-weight: 400;
-        // font-size: 16px;
-        // line-height: 28px;
-      }
-
-      &-regular {
-        // font-family: 'Montserrat';
-        // font-style: normal;
-        // font-weight: 400;
-        // font-size: 14px;
-        // line-height: 24px;
-      }
     }
 
   }
@@ -452,78 +434,6 @@
 
       &-blur {
         display: none;
-      }
-    }
-  }
-
-  .advices {
-    margin: auto;
-    text-align: center;
-
-    &__title {
-      // font-family: 'Montserrat';
-      // font-style: normal;
-      // font-weight: 500;
-      // font-size: 16px;
-      // line-height: 28px;
-      text-align: center;
-    }
-
-    &__text {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      padding: 10px;
-    }
-
-    &__sticky {
-      &-right {
-        right: 0;
-        width: 30px;
-      }
-
-      &-left {
-        left: 0;
-        width: 30px;
-      }
-    }
-  }
-
-  .footer {
-    #s {
-      font-weight: bolder;
-    }
-
-    &__menu {
-      &-first {
-        text-align: center;
-      }
-
-      &-second {
-        text-align: center;
-      }
-
-      &-main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        &__title {
-          text-align: center;
-        }
-      }
-    }
-
-    &__end {
-      display: flex;
-      flex-direction: column-reverse;
-      text-align: center;
-
-      &-first {
-        display: flex;
-        justify-content: space-between;
       }
     }
   }
@@ -570,7 +480,7 @@
   .modal {
     &__video {
       &-dialog {
-        padding: 23px 38px;
+        padding: 30px 40px;
         max-width: 320px;
       }
 
@@ -580,8 +490,21 @@
 
       }
 
-      &-close {
+      img {
+        position: fixed;
+        z-index: 10;
+        right: 20px;
         width: 15px;
+      }
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .tool {
+    &__item {
+      &-bold {
+        font-size: 30px;
       }
     }
   }

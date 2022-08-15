@@ -2,7 +2,6 @@
   &__burger {
     display: none;
     align-items: center;
-    // margin-right: 20px;
 
     .burger {
       display: flex;
@@ -31,20 +30,53 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 50px;
+  margin-top: 90px;
+
 }
 
 .burger {
+  &__close {
+    position: fixed;
+    top: 24px;
+    right: 20px;
+    width: 15px;
+
+    &--visible {
+      display: block;
+
+    }
+  }
+
+  &__zero {
+    color: #3F53D8;
+  }
+
   &__menu {
     display: none;
-    background: rgba(245, 241, 241, 0.6);
+    background-color: #ffffff;
+    background: rgba(245, 241, 241, 3);
     backdrop-filter: grayscale(1) contrast(3) blur(10px);
     backdrop-filter: inherit;
     backdrop-filter: initial;
     backdrop-filter: unset;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
     height: 100vh;
+    width: 100%;
     padding-bottom: 20px;
     gap: 45px;
+    padding-top: 90px;
+
+
+    &-zero {
+      color: #3F53D8;
+    }
 
     &-link {
       display: flex;
@@ -52,7 +84,7 @@
       align-items: center;
       text-decoration: none;
       color: #222222;
-      padding-bottom: 45px;
+      padding-bottom: 25px;
 
 
       // margin-bottom: 50px;
@@ -121,7 +153,12 @@
       font-weight: 400;
       font-size: 17px;
       line-height: 18px;
+      letter-spacing: 0.18px;
     }
+  }
+
+  &__zero {
+    color: #3F53D8;
   }
 
   &__basket {
@@ -160,6 +197,7 @@
       text-align: center;
       text-decoration: none;
       color: #080829;
+      letter-spacing: 0.4px;
 
       &:hover {
         color: #ffffff;
@@ -189,6 +227,7 @@
       color: #080829;
       margin-bottom: 36px;
       padding-bottom: 0;
+      letter-spacing: 2.16px;
     }
 
     &-regular {
@@ -197,6 +236,7 @@
       font-size: 18px;
       line-height: 29px;
       color: #080829;
+      letter-spacing: 0.36px;
     }
 
     &-test {
@@ -218,6 +258,7 @@
         font-size: 16px;
         line-height: 20px;
         color: #FFFFFF;
+        letter-spacing: 0.4px;
       }
     }
   }
@@ -283,6 +324,7 @@
     line-height: 31px;
     text-align: center;
     color: #080829;
+    letter-spacing: 0.48px;
   }
 
   &__img {

@@ -26,7 +26,7 @@
       <div class="menu__basket menu__main">
         <img src="./img/svg/basket.svg" alt="" class="basket__img">
         <a href="#">Корзина</a>
-        <span>0</span>
+        <span class="menu__zero">0</span>
         <button data-toggle="modal" class="menu__button menu__main">
           <a href="#" class="menu__button-item">Зарегистрироваться</a>
         </button>
@@ -40,30 +40,33 @@
           <span class="burger__line"></span> -->
         </button>
       </div>
-    </div>
-    <div class="burger__menu burger__menu--main">
-      <div class="burger__menu-main ">
-        <a href="#" class="burger__menu-link">Функции</a>
-        <a href="#" class="burger__menu-link">О нас</a>
-        <a href="#" class="burger__menu-link">Цены</a>
-        <a href="#" class="burger__menu-link">Блог</a>
-        <a href="#" class="burger__menu-link">Контакты</a>
-      </div>
-      <div class="b">
-        <div class="burger__menu-basket">
-          <img src="./img/svg/basket.svg" alt="" class="basket__img">
-          <a href="#">Корзина</a>
-          <span>0</span>
+      <div class="burger__menu burger__menu--main">
+        <div class="burger__menu-main ">
+          <a href="#" class="burger__menu-link">Функции</a>
+          <a href="#" class="burger__menu-link">О нас</a>
+          <a href="#" class="burger__menu-link">Цены</a>
+          <a href="#" class="burger__menu-link">Блог</a>
+          <a href="#" class="burger__menu-link">Контакты</a>
         </div>
-        <button data-toggle="modal" class="burger__menu-button">
-          <a href="#" class="burger__menu-button__link">Зарегистрироваться</a>
-        </button>
+        <div class="b">
+          <div class="burger__menu-basket">
+            <img src="./img/svg/basket.svg" alt="" class="basket__img">
+            <a href="#">Корзина</a>
+            <span class="burger__menu-zero">0</span>
+          </div>
+          <button data-toggle="modal" class="burger__menu-button">
+            <a href="#" class="burger__menu-button__link">Зарегистрироваться</a>
+          </button>
+          <a href="#" class="burger__close">
+            <img src="./img/svg/close.svg" alt="">
+          </a>
+        </div>
       </div>
     </div>
     <div class="container tool__container">
       <div class="tool__item">
         <span class="tool__item-bold">
-          Преобразуйте свою командную работу с помощью мощного инструмента дизайна
+          Преобразуйте свою командную работу с помощью мощного инструмента&nbsp;дизайна
         </span>
         <span class="tool__item-regular">
           Хватит тратить время на неуклюжую, разрозненную командную работу. Получите информацию обо всех
@@ -252,14 +255,14 @@
         <img src="./img/private__abstract.png" alt="" class="private__img-abstract">
       </div>
       <div class="private__text">
-        <span class="private__text-title">
+        <p class="private__text-title">
           Получите доступ к премиальным лицензионным видео, фотографиям и гифкам
-        </span>
-        <span class="private__text-regular">
+        </p>
+        <p class="private__text-regular">
           Получите доступ к библиотеке значков, видео, фотографий и гифок от лучших авторов мира в одном
           централизованном месте
           для всех потребностей дизайна для всей вашей команды.
-        </span>
+        </p>
         <hr>
         <div class="private__text-logo">
           <img src="./img/privat__ipsum1.png" alt="" class="">
@@ -556,9 +559,12 @@
       <a href="#" class="modal__video-close">
         <img src="./img/svg/close.svg" alt="">
       </a>
-      <video width="400" height="300" controls src="./video/collabio.mp4" type="audio/mpeg"></video>
+      <div class="modal__video-block">
+        <video id="if" width="400" height="300" controls src="./video/collabio.mp4" type="audio/mpeg"></video>
+      </div>
     </div>
   </div>
+
 
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>

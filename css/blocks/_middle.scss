@@ -12,6 +12,7 @@
     line-height: 56px;
     text-align: center;
     color: #080829;
+    letter-spacing: 1.44px;
   }
 
   &__text {
@@ -23,6 +24,7 @@
     text-align: start;
     max-width: 550px;
     color: #545479;
+    letter-spacing: 0.36px;
   }
 
   &__container {
@@ -47,6 +49,7 @@
 
       span {
         cursor: pointer;
+        letter-spacing: 0.02px;
       }
 
     }
@@ -167,6 +170,7 @@
       font-size: 36px;
       line-height: 56px;
       color: #080829;
+      letter-spacing: 1.44px;
     }
 
     &-regular {
@@ -177,6 +181,7 @@
       font-size: 18px;
       line-height: 29px;
       color: #7C7C97;
+      letter-spacing: 0.36px;
     }
 
     &-list {
@@ -188,6 +193,7 @@
       line-height: 29px;
       color: #080829;
       list-style: none;
+      letter-spacing: 0.36px;
     }
 
     &-button {
@@ -206,6 +212,7 @@
         font-size: 18px;
         line-height: 20px;
         color: #FFFFFF;
+        letter-spacing: 0.4px;
       }
     }
   }
@@ -228,6 +235,7 @@
     font-size: 36px;
     line-height: 56px;
     color: #080829;
+    letter-spacing: 1.44px;
   }
 
   &__regular {
@@ -238,6 +246,7 @@
     font-size: 18px;
     line-height: 29px;
     color: #545479;
+    letter-spacing: 0.36px;
   }
 
   &__bos {
@@ -258,6 +267,7 @@
       font-size: 15px;
       line-height: 22px;
       color: #080829;
+      letter-spacing: 0.32px;
     }
 
     &-text {
@@ -267,6 +277,7 @@
       font-size: 16px;
       line-height: 25px;
       color: #080829;
+      letter-spacing: 0.36px;
     }
   }
 
@@ -286,6 +297,7 @@
       font-size: 18px;
       line-height: 20px;
       color: #FFFFFF;
+      letter-spacing: 0.4px;
     }
   }
 
@@ -352,16 +364,18 @@
       font-size: 36px;
       line-height: 55px;
       color: #080829;
+      letter-spacing: 1.44px;
     }
 
     &-regular {
-      padding-top: 20px;
+      margin-top: 0;
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
       line-height: 29px;
       color: #545479;
+      letter-spacing: 0.36px;
     }
 
     hr {
@@ -400,6 +414,7 @@
     color: #080829;
     text-align: center;
     margin-bottom: 52px;
+    letter-spacing: 1.44px;
   }
 
   &__container {
@@ -424,6 +439,7 @@
       line-height: 34px;
       color: #080829;
       text-align: start;
+      letter-spacing: 0.56px;
     }
 
     &-regular {
@@ -434,6 +450,7 @@
       line-height: 25px;
       color: #545479;
       text-align: start;
+      letter-spacing: 0.36px;
     }
 
 
@@ -454,6 +471,7 @@
       font-size: 26px;
       line-height: 34px;
       color: #080829;
+      letter-spacing: 0.56px;
     }
 
     &-regular {
@@ -463,6 +481,7 @@
       font-size: 17px;
       line-height: 25px;
       color: #545479;
+      letter-spacing: 0.36px;
     }
   }
 
@@ -482,6 +501,7 @@
       line-height: 34px;
       color: #080829;
       padding-bottom: 10px;
+      letter-spacing: 0.56px;
     }
 
     &-regular {
@@ -492,6 +512,7 @@
       line-height: 25px;
       color: #545479;
       margin-top: 10px;
+      letter-spacing: 0.36px;
     }
   }
 }
@@ -531,6 +552,7 @@
     line-height: 56px;
     color: #000000;
     margin-bottom: 80px;
+    letter-spacing: 1.44px;
   }
 
   &__text {
@@ -541,6 +563,7 @@
     line-height: 42px;
     text-align: start;
     height: 170px;
+    letter-spacing: 0.64px;
   }
 
   &__star {
@@ -550,6 +573,7 @@
   &__author {
     display: flex;
     margin-bottom: 40px;
+    letter-spacing: 0.48px;
   }
 
   &__cursor {}
@@ -579,6 +603,7 @@
 
   &__plas {
     color: #3F53D8;
+    letter-spacing: 1.44px;
   }
 
   &__audio {
@@ -634,6 +659,7 @@
       font-size: 44px;
       line-height: 58px;
       color: #080829;
+      letter-spacing: 1.44px;
     }
 
     &-repost {
@@ -680,6 +706,7 @@
       max-width: 800px;
       margin: auto;
       margin-bottom: 57px;
+      letter-spacing: 1.44px;
     }
   }
 }
@@ -715,6 +742,7 @@
       border: none;
       text-align: center;
       cursor: pointer;
+      letter-spacing: 0.36px;
     }
 
     &-text {
@@ -725,6 +753,7 @@
       line-height: 35px;
       text-align: start;
       color: #080829;
+      letter-spacing: 0.52px;
     }
 
     &-date {
@@ -738,6 +767,7 @@
       display: flex;
       align-items: center;
       gap: 4px;
+      letter-spacing: 0.36px;
     }
   }
 
@@ -761,6 +791,7 @@
       border: none;
       text-align: center;
       cursor: pointer;
+      letter-spacing: 0.36px;
     }
 
     &-text {
@@ -771,6 +802,7 @@
       line-height: 35px;
       text-align: start;
       color: #080829;
+      letter-spacing: 0.52px;
     }
 
     &-date {
@@ -784,6 +816,7 @@
       display: flex;
       align-items: center;
       gap: 4px;
+      letter-spacing: 0.36px;
     }
   }
 
@@ -807,6 +840,7 @@
       border: none;
       text-align: center;
       cursor: pointer;
+      letter-spacing: 0.36px;
     }
 
     &-text {
@@ -817,6 +851,7 @@
       line-height: 35px;
       text-align: start;
       color: #080829;
+      letter-spacing: 0.52px;
     }
 
     &-date {
@@ -830,6 +865,7 @@
       display: flex;
       align-items: center;
       gap: 4px;
+      letter-spacing: 0.36px;
     }
   }
 
@@ -841,6 +877,7 @@
     line-height: 56px;
     color: #080829;
     margin-bottom: 70px;
+    letter-spacing: 1.44px;
   }
 }
 
@@ -896,6 +933,7 @@
     font-size: 48px;
     line-height: 70px;
     color: #FFFFFF;
+    letter-spacing: 2.16px;
   }
 
   &__button {
@@ -915,6 +953,7 @@
       text-align: center;
       margin-right: 30px;
       cursor: pointer;
+      letter-spacing: 0.4px;
     }
   }
 }
