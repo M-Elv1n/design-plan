@@ -27,9 +27,11 @@
         <img src="./img/svg/basket.svg" alt="" class="basket__img">
         <a href="#">Корзина</a>
         <span class="menu__zero">0</span>
-        <button data-toggle="modal" class="menu__button menu__main">
-          <a href="#" class="menu__button-item">Зарегистрироваться</a>
-        </button>
+        <a href="#" class="menu__button-item">
+          <button data-toggle="modal" class="menu__button menu__main">
+            Зарегистрироваться
+          </button>
+        </a>
       </div>
 
       <div class="header__burger">
@@ -140,49 +142,49 @@
       </span>
       <div class="function__container-img">
         <div>
-          <div class="function__img-reviewer">
+          <div class="function__img-icon function__img-reviewer">
             <img src="./img/svg__function/reviewer.svg" alt="">
           </div>
           <span>Неограниченное кол-во рецензентов</span>
         </div>
         <div>
-          <div class="function__img-sample">
+          <div class="function__img-icon function__img-sample">
             <img src="./img/svg__function/sample.svg" alt="">
           </div>
           <span>1 млн+ шаблонов</span>
         </div>
         <div>
-          <div class="function__img-find">
+          <div class="function__img-icon function__img-find">
             <img src="./img/svg__function/find.svg" alt="">
           </div>
           <span>Активы с возможностью поиска</span>
         </div>
         <div>
-          <div class="function__img-employees">
+          <div class="function__img-icon function__img-employees">
             <img src="./img/svg__function/employees.svg" alt="">
           </div>
           <span>Живое сотрудничество</span>
         </div>
         <div>
-          <div class="function__img-notification">
+          <div class="function__img-icon function__img-notification">
             <img src="./img/svg__function/notification.svg" alt="">
           </div>
           <span>Уведомления</span>
         </div>
         <div>
-          <div class="function__img-disegn">
+          <div class="function__img-icon function__img-disegn">
             <img src="./img/svg__function/disegn.svg" alt="">
           </div>
           <span>Отзывчивый дизайн</span>
         </div>
         <div>
-          <div class="function__img-support">
+          <div class="function__img-icon function__img-support">
             <img src="./img/svg__function/support.svg" alt="">
           </div>
           <span>Поддержка нескольких медиа</span>
         </div>
         <div>
-          <div class="function__img-history">
+          <div class="function__img-icon function__img-history">
             <img src="./img/svg__function/history.svg" alt="">
           </div>
           <span>История версий</span>
@@ -507,7 +509,7 @@
               <img src="./img/footer/mail2.svg" alt="">
               <span>Support@collab.com</span>
             </a>
-            <a href="https://wa.me/+12025550144" class="footer__menu-third__call">
+            <a href="tel:+12025550144" class="footer__menu-third__call">
               <img src="./img/footer/call.svg" alt="">
               <span>+1-202-555-0144</span>
             </a>
@@ -539,16 +541,16 @@
   <div class="modal">
     <div class="modal__overlay"></div>
     <div class="modal__dialog">
-      <a href="#" class="modal__close">
+      <div class="modal__close">
         <img src="./img/svg/close.svg" alt="">
-      </a>
+      </div>
       <h3 class="modal__dialog-title">
         Оставьте свои контакты и мы обязательно с вами свяжемся
       </h3>
       <form action="#" class="modal__dialog-form">
-        <input type="text" placeholder="Name" name="name" class="modal__dialog-form__name">
-        <input type="text" placeholder="Mail" name="mail" class="modal__dialog-form__mail">
-        <input type="text" placeholder="Phone" name="number" class="modal__dialog-form__number">
+        <input type="text" placeholder="Name" name="name" class="modal__dialog-form__input modal__dialog-form__name">
+        <input type="text" placeholder="Mail" name="mail" class="modal__dialog-form__input modal__dialog-form__mail">
+        <input type="text" placeholder="Phone" name="number" class="modal__dialog-form__input modal__dialog-form__number">
         <button type="submit" class="modal__dialog-form__button">Отправить</button>
       </form>
     </div>
@@ -556,12 +558,15 @@
   <div class="modal__video">
     <div class="modal__video-overlay"></div>
     <div class="modal__video-dialog">
-      <a href="#" class="modal__video-close">
+      <div class="modal__video-close">
         <img src="./img/svg/close.svg" alt="">
-      </a>
-      <div class="modal__video-block">
-        <video id="if" width="400" height="300" controls src="./video/collabio.mp4" type="audio/mpeg"></video>
       </div>
+      <div class="modal__video-block">
+        <video id="video-collabio" width="400" height="300" controls src="./video/collabio.mp4" type="audio/mpeg"></video>
+      </div>
+      <div class="btn video-play">Play video</div>
+      <div class="btn video-pause">Pause video</div>
+      <div class="btn video-stop">Stop video</div>
     </div>
   </div>
 
