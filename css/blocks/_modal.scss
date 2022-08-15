@@ -54,51 +54,23 @@
       gap: 10px;
       width: 100%;
 
-      &__name {
+      &__input {
         background: #EEF0FF;
+        border: 1px solid transparent;
         border-radius: 14px;
-        border: none;
         width: 349px;
         height: 50px;
         padding-left: 15px;
         cursor: pointer;
 
         &:hover {
-          border: 1px solid #080829;
-        }
-      }
-
-      &__mail {
-        background: #EEF0FF;
-        border-radius: 14px;
-        border: none;
-        width: 349px;
-        height: 50px;
-        padding-left: 15px;
-        cursor: pointer;
-
-        &:hover {
-          border: 1px solid #080829;
-        }
-      }
-
-      &__number {
-        background: #EEF0FF;
-        border-radius: 14px;
-        border: none;
-        width: 349px;
-        height: 50px;
-        padding-left: 15px;
-        cursor: pointer;
-
-        &:hover {
-          border: 1px solid #080829;
+          border-color: $color-text;
         }
       }
 
       &__button {
         padding: 17px 50px;
-        background: #3F53D8;
+        background: $color-primary;
         border-radius: 14px;
         border: none;
         text-align: center;

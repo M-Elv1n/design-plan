@@ -11,7 +11,7 @@
     font-size: 36px;
     line-height: 56px;
     text-align: center;
-    color: #080829;
+    color: $color-text;
     letter-spacing: 1.44px;
   }
 
@@ -23,7 +23,7 @@
     line-height: 29px;
     text-align: start;
     max-width: 550px;
-    color: #545479;
+    color: $color-text-secondary;
     letter-spacing: 0.36px;
   }
 
@@ -41,7 +41,7 @@
       font-weight: 400;
       font-size: 24px;
       line-height: 34px;
-      color: #080829;
+      color: $color-text;
 
       img {
         padding: 25px;
@@ -56,76 +56,44 @@
   }
 
   &__img {
-    &-reviewer {
+    &-icon {
       margin: auto;
-      background: rgba(44, 174, 118, 0.3);
       border-radius: 20px;
       width: 80px;
       height: 80px;
-      cursor: pointer;
+      margin-bottom: 31px;
+    }
+
+    &-reviewer {
+      background: rgba(44, 174, 118, 0.3);
     }
 
     &-sample {
-      margin: auto;
       background: rgba(254, 127, 81, 0.3);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
 
     &-find {
-      margin: auto;
       background: rgba(84, 84, 121, 0.3);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
 
     &-employees {
-      margin: auto;
       background: rgba(63, 83, 216, 0.3);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
 
     &-notification {
-      margin: auto;
       background: rgba(255, 193, 35, 0.3);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
 
     &-disegn {
-      margin: auto;
       background: rgba(162, 89, 255, 0.3);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
 
     &-support {
-      margin: auto;
       background: rgba(250, 91, 104, 0.3);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
 
     &-history {
-      margin: auto;
       background: rgba(103, 228, 255, 0.4);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
   }
 }
@@ -169,7 +137,7 @@
       font-weight: 400;
       font-size: 36px;
       line-height: 56px;
-      color: #080829;
+      color: $color-text;
       letter-spacing: 1.44px;
     }
 
@@ -191,14 +159,14 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 29px;
-      color: #080829;
+      color: $color-text;
       list-style: none;
       letter-spacing: 0.36px;
     }
 
     &-button {
       margin-top: 30px;
-      background: #3F53D8;
+      background: $color-primary;
       border-radius: 14px;
       border: none;
       padding: 20px;
@@ -234,7 +202,7 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 56px;
-    color: #080829;
+    color: $color-text;
     letter-spacing: 1.44px;
   }
 
@@ -245,7 +213,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 29px;
-    color: #545479;
+    color: $color-text-secondary;
     letter-spacing: 0.36px;
   }
 
@@ -266,7 +234,7 @@
       font-weight: 400;
       font-size: 15px;
       line-height: 22px;
-      color: #080829;
+      color: $color-text;
       letter-spacing: 0.32px;
     }
 
@@ -276,14 +244,14 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 25px;
-      color: #080829;
+      color: $color-text;
       letter-spacing: 0.36px;
     }
   }
 
   &__button {
     margin-top: 50px;
-    background: #3F53D8;
+    background: $color-primary;
     border-radius: 14px;
     border: none;
     max-width: 200px;
@@ -363,7 +331,7 @@
       font-weight: 400;
       font-size: 36px;
       line-height: 55px;
-      color: #080829;
+      color: $color-text;
       letter-spacing: 1.44px;
     }
 
@@ -374,7 +342,7 @@
       font-weight: 400;
       font-size: 17px;
       line-height: 29px;
-      color: #545479;
+      color: $color-text-secondary;
       letter-spacing: 0.36px;
     }
 
@@ -411,7 +379,7 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 56px;
-    color: #080829;
+    color: $color-text;
     text-align: center;
     margin-bottom: 52px;
     letter-spacing: 1.44px;
@@ -437,7 +405,7 @@
       font-weight: 400;
       font-size: 27px;
       line-height: 34px;
-      color: #080829;
+      color: $color-text;
       text-align: start;
       letter-spacing: 0.56px;
     }
@@ -448,7 +416,7 @@
       font-weight: 400;
       font-size: 17px;
       line-height: 25px;
-      color: #545479;
+      color: $color-text-secondary;
       text-align: start;
       letter-spacing: 0.36px;
     }
@@ -470,7 +438,7 @@
       font-weight: 400;
       font-size: 26px;
       line-height: 34px;
-      color: #080829;
+      color: $color-text;
       letter-spacing: 0.56px;
     }
 
@@ -480,7 +448,7 @@
       font-weight: 400;
       font-size: 17px;
       line-height: 25px;
-      color: #545479;
+      color: $color-text-secondary;
       letter-spacing: 0.36px;
     }
   }
@@ -499,7 +467,7 @@
       font-weight: 400;
       font-size: 26px;
       line-height: 34px;
-      color: #080829;
+      color: $color-text;
       padding-bottom: 10px;
       letter-spacing: 0.56px;
     }
@@ -510,7 +478,7 @@
       font-weight: 400;
       font-size: 17px;
       line-height: 25px;
-      color: #545479;
+      color: $color-text-secondary;
       margin-top: 10px;
       letter-spacing: 0.36px;
     }
@@ -602,7 +570,7 @@
   justify-content: space-between;
 
   &__plas {
-    color: #3F53D8;
+    color: $color-primary;
     letter-spacing: 1.44px;
   }
 
@@ -618,13 +586,13 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 30px;
-      color: #080829;
+      color: $color-text;
       cursor: pointer;
       padding-left: 10px;
     }
 
     &--container {
-      border: 1px solid #3F53D8;
+      border: 1px solid $color-primary;
       padding: 9px;
 
       &:hover {
@@ -658,7 +626,7 @@
       font-weight: 400;
       font-size: 44px;
       line-height: 58px;
-      color: #080829;
+      color: $color-text;
       letter-spacing: 1.44px;
     }
 
@@ -668,7 +636,7 @@
       font-weight: 400;
       font-size: 17px;
       line-height: 27px;
-      color: #545479;
+      color: $color-text-secondary;
       text-align: start;
     }
   }
@@ -736,7 +704,7 @@
       font-size: 14px;
       line-height: 18px;
       padding: 8px 18px;
-      color: #080829;
+      color: $color-text;
       background: rgba(162, 89, 255, 0.3);
       border-radius: 10px;
       border: none;
@@ -752,7 +720,7 @@
       font-size: 22px;
       line-height: 35px;
       text-align: start;
-      color: #080829;
+      color: $color-text;
       letter-spacing: 0.52px;
     }
 
@@ -762,7 +730,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
-      color: #080829;
+      color: $color-text;
       text-align: start;
       display: flex;
       align-items: center;
@@ -785,7 +753,7 @@
       font-size: 14px;
       line-height: 18px;
       padding: 8px 18px;
-      color: #080829;
+      color: $color-text;
       background: #D9DEFF;
       border-radius: 10px;
       border: none;
@@ -801,7 +769,7 @@
       font-size: 22px;
       line-height: 35px;
       text-align: start;
-      color: #080829;
+      color: $color-text;
       letter-spacing: 0.52px;
     }
 
@@ -811,7 +779,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
-      color: #080829;
+      color: $color-text;
       text-align: start;
       display: flex;
       align-items: center;
@@ -834,7 +802,7 @@
       font-size: 14px;
       line-height: 18px;
       padding: 8px 18px;
-      color: #080829;
+      color: $color-text;
       background: rgba(250, 91, 104, 0.3);
       border-radius: 10px;
       border: none;
@@ -850,7 +818,7 @@
       font-size: 22px;
       line-height: 35px;
       text-align: start;
-      color: #080829;
+      color: $color-text;
       letter-spacing: 0.52px;
     }
 
@@ -860,7 +828,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
-      color: #080829;
+      color: $color-text;
       text-align: start;
       display: flex;
       align-items: center;
@@ -875,14 +843,14 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 56px;
-    color: #080829;
+    color: $color-text;
     margin-bottom: 70px;
     letter-spacing: 1.44px;
   }
 }
 
 .trial {
-  background: #080829;
+  background: $color-text;
   text-align: center;
 
   &__container {
@@ -945,7 +913,7 @@
       padding: 10px 35px;
       height: 60px;
       width: 240px;
-      background: #3F53D8;
+      background: $color-primary;
       border-radius: 14px;
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
