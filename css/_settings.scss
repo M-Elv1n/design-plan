@@ -20,3 +20,26 @@ header {
   min-height: 500px;
 
 }
+
+.btn {
+  display: inline-block;
+  background-color: $color-primary;
+  border: none;
+  border-radius: 14px;
+  padding: 19px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+  
+  &:hover {
+    background-color: lighten($color-primary, 5%);
+  }
+  
+  &:active {
+    background-color: darken($color-primary, 5%);
+  }
+}
