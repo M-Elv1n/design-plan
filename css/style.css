@@ -532,7 +532,7 @@ header {
   color: #3F53D8;
   margin-left: 10px;
 }
-.menu__basket a {
+.menu__basket .cart {
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -548,26 +548,23 @@ header {
   background-color: #ffffff;
   gap: 20px;
   margin-left: 20px;
+  cursor: pointer;
+  padding: 20px 10px;
+  align-items: center;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: #080829;
 }
 .menu__button:hover {
   background-color: #3F53D8;
+  color: white;
   transition: 0.2s;
 }
 .menu__button-item {
-  padding: 20px 10px;
-  align-items: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
   text-decoration: none;
-  color: #080829;
-  letter-spacing: 0.4px;
-}
-.menu__button-item:hover {
-  color: #ffffff;
-  transition: 0.2s;
 }
 
 .tool__container {
@@ -731,69 +728,36 @@ header {
   cursor: pointer;
   letter-spacing: 0.02px;
 }
-.function__img-reviewer {
+.function__img-icon {
   margin: auto;
-  background: rgba(44, 174, 118, 0.3);
   border-radius: 20px;
   width: 80px;
   height: 80px;
-  cursor: pointer;
+  margin-bottom: 31px;
+}
+.function__img-reviewer {
+  background: rgba(44, 174, 118, 0.3);
 }
 .function__img-sample {
-  margin: auto;
   background: rgba(254, 127, 81, 0.3);
-  border-radius: 20px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
 }
 .function__img-find {
-  margin: auto;
   background: rgba(84, 84, 121, 0.3);
-  border-radius: 20px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
 }
 .function__img-employees {
-  margin: auto;
   background: rgba(63, 83, 216, 0.3);
-  border-radius: 20px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
 }
 .function__img-notification {
-  margin: auto;
   background: rgba(255, 193, 35, 0.3);
-  border-radius: 20px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
 }
 .function__img-disegn {
-  margin: auto;
   background: rgba(162, 89, 255, 0.3);
-  border-radius: 20px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
 }
 .function__img-support {
-  margin: auto;
   background: rgba(250, 91, 104, 0.3);
-  border-radius: 20px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
 }
 .function__img-history {
-  margin: auto;
   background: rgba(103, 228, 255, 0.4);
-  border-radius: 20px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
 }
 
 .template {
@@ -1642,41 +1606,17 @@ header {
   gap: 10px;
   width: 100%;
 }
-.modal__dialog-form__name {
+.modal__dialog-form__input {
   background: #EEF0FF;
+  border: 1px solid transparent;
   border-radius: 14px;
-  border: none;
   width: 349px;
   height: 50px;
   padding-left: 15px;
   cursor: pointer;
 }
-.modal__dialog-form__name:hover {
-  border: 1px solid #080829;
-}
-.modal__dialog-form__mail {
-  background: #EEF0FF;
-  border-radius: 14px;
-  border: none;
-  width: 349px;
-  height: 50px;
-  padding-left: 15px;
-  cursor: pointer;
-}
-.modal__dialog-form__mail:hover {
-  border: 1px solid #080829;
-}
-.modal__dialog-form__number {
-  background: #EEF0FF;
-  border-radius: 14px;
-  border: none;
-  width: 349px;
-  height: 50px;
-  padding-left: 15px;
-  cursor: pointer;
-}
-.modal__dialog-form__number:hover {
-  border: 1px solid #080829;
+.modal__dialog-form__input:hover {
+  border-color: #080829;
 }
 .modal__dialog-form__button {
   padding: 17px 50px;
