@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   const reviewsSwiper = new Swiper('.swiper-container', {
     loop: true,
     pagination: {
@@ -29,15 +30,26 @@ $(document).ready(function () {
     document.querySelector(".burger__menu").classList.toggle("burger__menu--visible");
   });
 
+  const collabioVideo = document.getElementById("video-collabio");
+
+  $(".video-play").on("click", function () {
+    collabioVideo.play();
+  });
+
+  $(".video-pause").on("click", function () {
+    collabioVideo.pause();
+  });
+
+  $(".video-stop").on("click", function () {
+    collabioVideo.pause();
+    collabioVideo.currentTime = 0;
+  });
+
   var menuCloseVideo = document.querySelector(".modal__video-close");
   menuCloseVideo.addEventListener("click", function () {
-    console.log("click modal__video-close");
     document.querySelector(".modal__video-dialog").classList.toggle("modal__video-dialog--visible");
     document.querySelector(".modal__video-overlay").classList.toggle("modal__video-overlay--visible");
-    $('.modal__video-block').fadeOut(function () {
-      $('.modal__video-close').remove();
-      document.location.reload();
-    });
+    $('.modal__video-block').fadeOut(function () {});
     return false;
   });
 
@@ -67,7 +79,7 @@ $(document).ready(function () {
   var modalVideo = $("[data-toggle=modal__video]");
   // var closeModalVideo = $(".modal__video-close");
   modalVideo.on("click", openModalVideo);
-  closeModalVideo.on("click", closeModalVideo);
+  // closeModalVideo.on("click", closeModalVideo);
 
   function openModalVideo() {
     var modalVideoOverlay = $(".modal__video-overlay");
