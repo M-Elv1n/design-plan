@@ -585,6 +585,8 @@ header {
   border-radius: 14px;
   border: none;
   padding: 10px 36px;
+  height: 60px;
+  width: 260px;
 }
 .tool__item-button__link {
   text-align: center;
@@ -1472,6 +1474,8 @@ header {
 }
 .trial__button-main {
   padding: 10px 35px;
+  height: 60px;
+  width: 240px;
   background: #3F53D8;
   border-radius: 14px;
   font-family: "Montserrat", sans-serif;
@@ -1484,6 +1488,7 @@ header {
   margin-right: 30px;
   cursor: pointer;
   letter-spacing: 0.4px;
+  border: none;
 }
 
 .footer__container {
@@ -2048,8 +2053,20 @@ header {
   }
 }
 @media (max-width: 600px) {
+  .tool__container {
+    padding: 0 20px;
+  }
   .tool__item-bold {
     font-size: 30px;
+  }
+  .middle {
+    padding: 0 20px;
+  }
+  .footer__link {
+    padding: 0 20px;
+  }
+  .footer__end-first {
+    padding: 0 20px;
   }
 }
 @media (max-width: 320px) {
