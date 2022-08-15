@@ -56,76 +56,44 @@
   }
 
   &__img {
-    &-reviewer {
+    &-icon {
       margin: auto;
-      background: rgba(44, 174, 118, 0.3);
       border-radius: 20px;
       width: 80px;
       height: 80px;
-      cursor: pointer;
+      margin-bottom: 31px;
+    }
+
+    &-reviewer {
+      background: rgba(44, 174, 118, 0.3);
     }
 
     &-sample {
-      margin: auto;
       background: rgba(254, 127, 81, 0.3);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
 
     &-find {
-      margin: auto;
       background: rgba(84, 84, 121, 0.3);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
 
     &-employees {
-      margin: auto;
       background: rgba(63, 83, 216, 0.3);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
 
     &-notification {
-      margin: auto;
       background: rgba(255, 193, 35, 0.3);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
 
     &-disegn {
-      margin: auto;
       background: rgba(162, 89, 255, 0.3);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
 
     &-support {
-      margin: auto;
       background: rgba(250, 91, 104, 0.3);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
 
     &-history {
-      margin: auto;
       background: rgba(103, 228, 255, 0.4);
-      border-radius: 20px;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
     }
   }
 }
