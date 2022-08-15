@@ -64,7 +64,7 @@
         cursor: pointer;
 
         &:hover {
-          border: 1px solid #080829;
+          border: 1px solid $color-text;
         }
       }
 
@@ -78,7 +78,7 @@
         cursor: pointer;
 
         &:hover {
-          border: 1px solid #080829;
+          border: 1px solid $color-text;
         }
       }
 
@@ -92,13 +92,13 @@
         cursor: pointer;
 
         &:hover {
-          border: 1px solid #080829;
+          border: 1px solid $color-text;
         }
       }
 
       &__button {
         padding: 17px 50px;
-        background: #3F53D8;
+        background: $color-primary;
         border-radius: 14px;
         border: none;
         text-align: center;

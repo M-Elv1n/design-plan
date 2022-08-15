@@ -330,6 +330,27 @@ header {
   min-height: 500px;
 }
 
+.btn {
+  display: inline-block;
+  background-color: #3F53D8;
+  border: none;
+  border-radius: 14px;
+  padding: 19px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #5466dc;
+}
+.btn:active {
+  background-color: #2b41d3;
+}
+
 @font-face {
   font-family: "Plus Jakarta Sans";
   src: url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2"), url("../fonts/PlusJakartaSans-Regular.woff") format("woff");
@@ -509,6 +530,7 @@ header {
 }
 .menu__zero {
   color: #3F53D8;
+  margin-left: 10px;
 }
 .menu__basket a {
   font-style: normal;
