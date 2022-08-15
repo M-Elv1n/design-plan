@@ -163,8 +163,7 @@
   }
 
   &__basket {
-
-    a {
+    .cart {
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
@@ -182,28 +181,24 @@
     background-color: #ffffff;
     gap: 20px;
     margin-left: 20px;
+    cursor: pointer;
+    padding: 20px 10px;
+    align-items: center;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: $color-text;
 
     &:hover {
       background-color: $color-primary;
+      color: white;
       transition: 0.2s;
     }
 
     &-item {
-      padding: 20px 10px;
-      align-items: center;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      text-align: center;
       text-decoration: none;
-      color: $color-text;
-      letter-spacing: 0.4px;
-
-      &:hover {
-        color: #ffffff;
-        transition: 0.2s;
-      }
     }
   }
 }
